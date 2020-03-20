@@ -6,7 +6,12 @@ export default class Plantas extends Component{
 		return(
 			<>
 			<Cabecalho/>
-			plantas</>
+			<div className="fundo">
+				<div className="conteudo">
+					<br/><br/>plantas
+				</div>
+			</div>
+			</>
 		)
 	}
 }

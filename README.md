@@ -1,4 +1,4 @@
-#PANCS
+# PANCS
 Projeto feito em react
 
 ### O projeto utiliza:
@@ -7,3 +7,4 @@ Projeto feito em react
 - node-sass
 - semantic-ui-react
 - react-redux
+- npm install react-router-bootstrap --save

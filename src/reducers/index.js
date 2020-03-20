@@ -1,9 +1,7 @@
-import { clickReducer } from './clickReducer';
-import { mostraTable } from './clickTable';
+import { clickMenu } from './clickMenu';
 import { combineReducers } from 'redux';
 
 export const Reducers = combineReducers({
-  clickState: clickReducer,
-  TableState: mostraTable
+  clickMenu: clickMenu
   
 });

@@ -2,7 +2,7 @@ $nav: #343a40;
 .cabecalho{
 	/*border-top: 2px solid green;*/
 	background: $nav;
-	
+	height:60px;
 	a{
 		color: #dcdcdc !important;
 		font-family: 'Roboto', sans-serif !important;
@@ -47,3 +47,8 @@ $nav: #343a40;
 	}
 }
 
+.MenuAtivo{
+	background: #dcdcdc30;
+	border-radius: 5px;
+	
+}

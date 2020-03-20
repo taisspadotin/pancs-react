@@ -1,0 +1,24 @@
+.login{
+	background: #dcdcdc30 !important;
+	border: 1px solid #343a40;
+	border-radius: 5px;
+	min-height: 200px;
+	width: 100%;
+	.header{
+		font-family: 'Roboto', sans-serif !important;
+		font-size: 1.2em;
+		padding-top: 10px;
+		text-align:center;
+	}
+	.form{
+		padding-top: 10px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 10px;
+		label{
+			color: #dcdcdc !important;
+			font-family: 'Roboto', sans-serif !important;
+			font-weight: normal !important;
+		}
+	}
+}

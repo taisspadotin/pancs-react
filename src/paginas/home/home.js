@@ -3,21 +3,21 @@ import Cabecalho from '../../components/cabecalho';
 import {Row, Col, Carousel} from 'react-bootstrap';
 import { Message } from 'semantic-ui-react'
 import {Link} from 'react-router-dom';
-//PARA USAR REDUX:
-/*import { connect } from 'react-redux';
+/*
+import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { clickButton, showTable, GuardaDados} from '../../actions';
+import { cabecalhoAcao} from '../../actions';
 */
 import './style.scss';
 
 
 
 class Home extends Component{
-	constructor(props){
+	/*constructor(props){
 		super(props);
 		
 		//this.refNav = React.createRef();
-	}
+	}*/
 	state =
 	{
 		cor_fundo: 'none',
@@ -164,13 +164,11 @@ class Home extends Component{
 
 export default Home;
 /*const mapStateToProps = store => ({
-  newValue: store.clickState.newValue,
-  showTb:   store.TableState.showTb,
-  dados:    store.TableState.dados
+  pagina_ativa: store.clickMenu.pagina_ativa
 });
 
 const mapDispatchToProps = dispatch =>
-  bindActionCreators({ clickButton, showTable, GuardaDados}, dispatch);
+  bindActionCreators({ cabecalhoAcao}, dispatch);
 
 
   

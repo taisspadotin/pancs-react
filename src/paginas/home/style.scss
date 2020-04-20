@@ -1,11 +1,73 @@
 $cor_fonte: #dcdcdc;
+/*$verde1: #dbebc6;*/
+$grad1: #f5bdb2;
+
+$grad2: #fff;
 .ConteudoInicial{
 	background: url("../../img/flor.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height:400px;
 	color: #fff;
+}
+.todo{
+	
+	min-height:620px;
+	paddingTop: 50;
+	display: flex;
+	
+}
+.decoracao{
+	//background: red;
+	margin-top: 50px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	width: 100%;
+	background-image: linear-gradient( to right, $grad1 35%, $grad2 25%, $grad2 60%); 
+	/*background-image: linear-gradient( to right, #e3f6d2 35%, white 25%, white 60%); 
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-name: fundo;*/
+	
+}
+@keyframes fundo {
+  0% {
+    background-image: linear-gradient( to right, #c4dec0 25%, white 25%, white 70%); 
+  }
 
+  25% {
+    background-image: linear-gradient( to right, #c4dec0 25%, #c4dec0 25%, #c4dec0 70%); 
+  }
+  50% {
+    background-image: linear-gradient( to right, white 65%, #c4dec0 25%, #c4dec0 35%); 
+  }
+  100% {
+    background-image: linear-gradient( to right, #c4dec0 25%, #c4dec0 25%, #c4dec0 70%); 
+  }
+}
+
+.titulo{
+	margin-left: 150px;
+	margin-top:90px;
+	flex-direction	: row;
+	h5{		
+		letter-spacing: 0.6em;
+		color: #9d860d;
+	}
+
+	h1{
+	margin-top:20px;
+		color: #000;
+		font-family: 'Playfair Display', serif;
+		font-size: 4rem;
+		width: 550px;	
+	}
+	p{
+		width: 500px;
+		margin-top:20px;
+		font-family: 'Playfair Display', serif;
+	}
 }
 .introducao{
 	margin-top:50px;

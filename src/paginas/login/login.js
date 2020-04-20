@@ -8,36 +8,29 @@ export default class Login extends Component{
 	render(){
 		return(
 		<>
-		<Cabecalho/>
+		<Cabecalho />
 			<div className="fundo">
-				<div className="conteudo">
-					<br/><br/>
-					<Row className="justify-content-md-center">
-						<Col xs lg="6">
-							<div className="login">
-								<div className="header">Login</div>
-								<Form>
-								  <Form.Input
-									icon='user'
-									iconPosition='left'
-									label='Username'
-									placeholder='Username'
-								  />
-								  <Form.Input
-									icon='lock'
-									iconPosition='left'
-									label='Password'
-									type='password'
-								  />
-
-								  <Button content='Login' primary />
-								</Form>
-								
+				<br/><br/>
+					<div className="login">
+						<div className="login1">
+							<img src={require("../../img/login.png")} className="imagem"/>
+						</div>
+						<div className="login2">
+							<div className="login-content" align="center">	
+								<h1>LogIn</h1>
+								<br/>
+								<input className="input-login" type="text"/>
+								<input className="input-login" type="text"/>
+								<br/>
+								<button className="botao-login" type="button" onClick={()=>this.login()}>SING IN</button>
+								<br/>
+								<p>Forgot <a href="/">User name / password </a>?</p>
+								<br/>
+								<h5>SING OUT</h5>
 							</div>
-						</Col>
-					</Row>
+						</div>
+					</div>
 				</div>
-			</div>
 		</>
 		)
 	}

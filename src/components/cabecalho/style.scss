@@ -1,26 +1,32 @@
-$nav: #343a40;
+$nav: #fff;
+$cor_hover: #f2baae;
 .cabecalho{
 	/*border-top: 2px solid green;*/
 	background: $nav;
-	height:60px;
+	height:50px;
 	a{
-		color: #dcdcdc !important;
-		font-family: 'Roboto', sans-serif !important;
+		color: #000 !important;
+		font-family: 'Playfair Display', serif !important;
+		/*text-transform: uppercase;*/
 		&:hover{
-			color: #fff !important;
+			color: #780c1c !important;
 			text-decoration: none;
 		}
+	}
+	.home{
+		margin-left: 20px;
+		letter-spacing: 0.431em;
 	}
 	position: fixed !important;
 	z-index: 9999;
 	width: 100%;
 	.drop{
 		.dropdown-menu{
-			background: #000;
+			background: #fff;
 			a{
 				background:none;
 				&:hover{
-					background: $nav;
+					background: $cor_hover;
 				}
 			}
 		}

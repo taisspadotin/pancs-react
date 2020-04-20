@@ -27,13 +27,17 @@ class Cabecalho extends Component{
 		if(this.props.pagina_ativa === 'receitas'){
 			receitasAtiva = 'MenuAtivo';
 		}
+		let logo = 'PANCS';
+		if(this.props.logo === 'false'){
+			logo = '';
+		}
 		return(
 		<>
 		<Navbar collapseOnSelect expand="lg" style={{background: this.props.fundo}} className="cabecalho">
 		  <Navbar.Brand>
-			<Link to="/" onClick={()=>this.props.cabecalhoAcao('home')}>
+			<Link to="/" onClick={()=>this.props.cabecalhoAcao('home')} className="home">
 			{/*<img src={require("../../img/favicon.ico")} style={{width: '40px'}}/>*/}
-				Pancs <i className="leaf icon"></i>
+			{logo}
 			</Link>
 		  </Navbar.Brand>
 		  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -54,7 +58,7 @@ class Cabecalho extends Component{
 			<Nav>
 			  <LinkContainer to="/login">
 					<Nav.Link onClick={()=>this.props.cabecalhoAcao('login')} >
-						<Button basic color='green' style={{display: displayLogin}}>Login</Button>
+						Login
 					</Nav.Link>
 			  </LinkContainer>
 			</Nav>

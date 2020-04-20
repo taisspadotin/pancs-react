@@ -64,7 +64,30 @@ class Home extends Component{
 		}
 		return(
 		<>
-		<div className="ConteudoInicial">
+		<div className="todo">
+			<br/>
+			<Cabecalho fundo={this.state.cor_fundo} logo="false"/>	
+			<br/>
+			<div className="decoracao">
+				
+				<br/><br/>
+				<Row>
+					<Col sm md="7">
+						<div className="titulo">
+							<h5>PANCS</h5>
+							<h1>Plantas alimenticias não convencionais</h1>
+							<p>São plantas alimenticias não convencionais, que são ignoradas pela maior parte da população, seja por falta de conhecimento ou por razões sociais. O site tem como objetivo ajudar na identificaçõ dessas plantas e assim ampliar a rede de alimentação disponível.</p>
+
+						</div>
+					</Col>
+					<Col sm md="5" style={{marginTop:'30px'}}>
+						<img src={require('../../img/inicio.png')} style={{width: '300px', height: '450px'}}/>
+					</Col>
+				</Row>
+			</div>		
+		</div>	
+		{/*<div className="ConteudoInicial">
+		<div></div>
 		<Cabecalho fundo={this.state.cor_fundo}/>
 		<br/>
 		<div className="introducao">
@@ -74,7 +97,6 @@ class Home extends Component{
 		</div>
 		</div>
 		<div className="fundo">
-		{/*<div className="conteudo"></div>	*/}
 		<div className="meio-inicial">
 				<Row align="center">
 					<Col>
@@ -112,51 +134,9 @@ class Home extends Component{
 						<p>A maior parte das PANCs apresentam algum tipo de beneficio, alem da alimentação</p>
 					</Col>
 				</Row>
-		</div>
-		{/*<div style={{ width: '100%'}}>
-			<Carousel style={{height:"400px"}}>
-			  <Carousel.Item style={{height:"400px"}}>
-				  
-				  <img
-				  className="imagem_car"
-				  src={require('../../img/flor2.jpg')}
-				  alt="First slide"/>
-				  
-				  
-				  
-				<Carousel.Caption >
-				  <h3>First slide label</h3>
-				  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-				</Carousel.Caption>
-			  </Carousel.Item>
-			  <Carousel.Item style={{height:"400px"}}>
-				<div className="slides">
-					
-				</div>
-				<Carousel.Caption>
-				  <h3>Second slide label</h3>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</Carousel.Caption>
-			  </Carousel.Item>
-			  <Carousel.Item style={{height:"400px"}}>
-				 <img
-				  className="imagem_car"
-				  src={require('../../img/planta.jpg')}
-				  alt="First slide"
-				  
-				  />
-				
-
-				<Carousel.Caption>
-				  <h3>Third slide label</h3>
-				  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-				</Carousel.Caption>
-			  </Carousel.Item>
-			</Carousel>
-			
-			</div>*/}
+		</div
 			{mensagem}
-		</div>	
+		</div>*/}	
 		</>
 		)
 	}

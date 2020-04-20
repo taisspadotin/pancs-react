@@ -10,7 +10,7 @@ import { cabecalhoAcao} from '../../actions';
 */
 import './style.scss';
 
-
+/*teste*/
 
 class Home extends Component{
 	/*constructor(props){
